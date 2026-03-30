@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Navbar */
+header {
+    background: #020617;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #94a3b8;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    color: #38bdf8;
+    margin: 10px 0;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills {
+    max-width: 500px;
+    margin: auto;
+}
+
+.skill {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.bar {
+    background: #1e293b;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bar span {
+    display: block;
+    height: 10px;
+    background: #38bdf8;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact-form {
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
